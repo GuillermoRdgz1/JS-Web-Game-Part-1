@@ -12,4 +12,8 @@ function newImage (url, left, bottom) {
 
 function newItem(url, left, bottom){
     let object = newImage(url, left, bottom)
+
+    object.addEventListener('dblclick', () => {
+        object.remove()
+    })
 }
